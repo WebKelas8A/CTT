@@ -1,0 +1,62 @@
+.category .content{
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+/*Organic*/
+.category .content .organic{
+    background-color: green;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+.category .content .organic:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+.category .content .organic h1{
+    position: relative;
+    top: 1.5rem;
+    color: black;
+}
+
+/* Inorganic */
+.category .content .inorganic{
+    background-color: rgb(35, 59, 193);
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+.category .content .inorganic:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+.category .content .inorganic h1{
+    position: relative;
+    top: 1.5rem;
+    color: black;
+}
+
+/* Biohazard */
+.category .content .biohazard{
+    background-color: rgb(219, 127, 30);
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+.category .content .biohazard:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+.category .content .biohazard h1{
+    position: relative;
+    top: 1.5rem;
+    color: black;
+}

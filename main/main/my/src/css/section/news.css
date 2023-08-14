@@ -1,0 +1,21 @@
+.news{
+    position: relative;
+}
+.news h1{
+    position: relative;
+    text-align: center;
+}
+.news .content{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.news .content .topic{
+    background-color: rgb(218, 218, 218);
+}
+.news .content .topic img{
+    width: fit-content;
+}
+.news .content .topic .title{
+    position: relative;
+}

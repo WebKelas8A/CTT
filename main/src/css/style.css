@@ -17,8 +17,29 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 11px;
+}
+
+::-webkit-scrollbar-button{
+  background-color: #4c921d;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #9ea819;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #1b370e;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #4c921d;
+}
+
 body{
     font-family: 'Roboto';
+    scrollbar-width: thin;
 }
 
 .navbar{
@@ -59,6 +80,14 @@ body{
   
 .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.5);
+}
+
+#menu{
+  display: none;
+}
+
+.active{
+  right: 100%;
 }
 
 .lang{
@@ -252,6 +281,43 @@ body{
   }
 }
 
+@media (max-width:420px) {
+  .bg{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+  }
+  html{
+    font-size: 45.5%;
+  }
+  #menu{
+    display: inline-block;
+  }
+  .navbar .navbar-nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 25rem;
+    height: 100vh;
+  }
+  .navbar .navbar-nav a{
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2rem;
+    color: black;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
 @media (max-width:360px) {
   .bg{
     min-height: 100vh;
@@ -262,5 +328,4 @@ body{
   html{
     font-size: 40.5%;
   }
-  
 }

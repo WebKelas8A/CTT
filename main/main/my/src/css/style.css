@@ -1,0 +1,28 @@
+/* Header */@import url(./section/header.css);@import url();/* Category */@import url(./section/category.css);@import url(./section/news.css);:root{--primaryColor: ;--secondColor: ;--transition: .4s;--textColor1: #232020;--shadow: #1b1a1a;}*{margin: 0;padding: 0;left: 0; top: 0;font-family: sans-serif;box-sizing: border-box;text-decoration: none;}body{height: 1000vh;}
+
+.android{
+    display: none;
+}
+
+@media (max-width: 1919px){
+    body{
+        overflow: hidden;
+        background-color: rgb(13, 62, 13);
+    }
+    .android{
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 5%;
+        height: 1vh;
+    }
+    .android h1{
+        color: #fff;
+    }
+    .android p{
+        color: #fff;
+    }
+    .header,.category,.news{
+        display: none;
+    }
+}
