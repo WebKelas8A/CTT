@@ -1,5 +1,6 @@
 .news{
     position: relative;
+    top: 20vh;
 }
 .news h1{
     position: relative;
